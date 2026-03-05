@@ -1,4 +1,4 @@
-import { Plane } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = ["Features", "Pricing", "About", "Contact"];
 
@@ -7,10 +7,15 @@ export default function Footer() {
     <footer className="bg-[#022C55] py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-8 md:grid-cols-3">
-          {/* Logo */}
-          <div className="flex items-center gap-2 font-heading text-xl font-bold text-white">
-            <Plane className="h-6 w-6 text-sky-blue" />
-            SKYSUITE
+          {/* Logo — white reversed version for dark navy background */}
+          <div className="flex items-center">
+            <Image
+              src="/brand/Logo-07.png"
+              alt="SkySuite"
+              width={180}
+              height={54}
+              className="h-10 w-auto object-contain"
+            />
           </div>
 
           {/* Nav links */}

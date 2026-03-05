@@ -1,13 +1,15 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Plane } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = ["Features", "Pricing", "About"];
 
 export default function Nav() {
   const { scrollY } = useScroll();
   const bgOpacity = useTransform(scrollY, [0, 100], [0, 1]);
+  // Switch logo: white reversed on dark hero (scrollY=0), full-color on frosted glass
+  const scrolled = useTransform(scrollY, [0, 80], [0, 1]);
 
   return (
     <motion.nav
@@ -21,9 +23,32 @@ export default function Nav() {
         className="absolute inset-0 glass-nav"
       />
       <div className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#" className="flex items-center gap-2 font-heading text-xl font-bold text-navy-blue">
-          <Plane className="h-6 w-6 text-sky-blue" />
-          SKYSUITE
+        <a href="#" className="flex items-center">
+          {/* Full-color logo — shown on frosted glass (scrolled state) */}
+          <motion.div style={{ opacity: scrolled }}>
+            <Image
+              src="/brand/Logo-01.png"
+              alt="SkySuite"
+              width={160}
+              height={48}
+              className="h-9 w-auto object-contain"
+              priority
+            />
+          </motion.div>
+          {/* White reversed logo — shown on dark hero (unscrolled state) */}
+          <motion.div
+            style={{ opacity: useTransform(scrollY, [0, 80], [1, 0]) }}
+            className="absolute"
+          >
+            <Image
+              src="/brand/Logo-07.png"
+              alt="SkySuite"
+              width={160}
+              height={48}
+              className="h-9 w-auto object-contain"
+              priority
+            />
+          </motion.div>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
