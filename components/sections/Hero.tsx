@@ -3,54 +3,45 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// TO ADD COCKPIT PHOTO: place hero-cockpit.jpg in public/ and update heroHasPhoto to true.
-const heroHasPhoto = true;
-
 const ease = [0.25, 0.1, 0.25, 1] as const;
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#011830]">
-      {/* Background layer */}
-      {heroHasPhoto ? (
-        <>
-          <Image
-            src="/hero-cockpit.jpg"
-            alt="Cockpit view at dusk"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to bottom, rgba(1,24,48,0.2) 0%, rgba(1,24,48,0.95) 100%)",
-            }}
-          />
-        </>
-      ) : (
-        <>
-          {/* SVG grid overlay */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(7,188,231,0.04)' stroke-width='1'/%3E%3C/svg%3E")`,
-            }}
-          />
-          {/* Luminous orbs */}
-          <div className="hero-orb-a absolute -top-20 right-[10%] h-[800px] w-[800px]" />
-          <div className="hero-orb-b absolute top-[40%] -left-[10%] h-[800px] w-[800px]" />
-          {/* Vignette */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, transparent 40%, rgba(1,24,48,0.6) 100%)",
-            }}
-          />
-        </>
-      )}
+      {/* Background photo */}
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/hero-cockpit.jpg"
+          alt="SkySuite - Every Flight Starts Here"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Main overlay: dark left, reveals aircraft right */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(105deg, rgba(1,24,48,0.92) 0%, rgba(1,24,48,0.78) 45%, rgba(1,24,48,0.45) 75%, rgba(1,24,48,0.60) 100%)",
+          }}
+        />
+        {/* Bottom fade to section bg */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-40"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(1,24,48,1) 0%, transparent 100%)",
+          }}
+        />
+      </div>
+
+      {/* SVG grid texture overlay */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(7,188,231,0.03)' stroke-width='1'/%3E%3C/svg%3E")`,
+        }}
+      />
 
       {/* Content */}
       <div className="relative mx-auto flex min-h-screen max-w-7xl items-end px-6 pb-[120px] pt-[200px] lg:items-center lg:pb-0 lg:pt-0">
