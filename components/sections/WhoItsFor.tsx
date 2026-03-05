@@ -14,7 +14,7 @@ const personas = [
     icon: Users,
     title: "Flight Clubs",
     tagline: "Every member flies. Every cost lands fairly.",
-    desc: "Utilization tracking, member management, maintenance visibility, and automated billing so the club runs itself and your fixed costs are always covered.",
+    desc: "Utilization tracking, member management, maintenance visibility, and automated billing so the club runs itself.",
   },
   {
     icon: PlaneTakeoff,
@@ -43,11 +43,13 @@ export default function WhoItsFor() {
           viewport={{ once: true }}
           className="mb-6 text-center"
         >
-          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
-            Who It&apos;s For
-          </p>
+          <div className="flex items-center justify-center gap-3 text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
+            Built For You
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
+          </div>
           <h2 className="mt-6 font-heading text-4xl font-bold text-navy-blue md:text-5xl">
-            Built for every role in your operation
+            Built for Every Operator.
           </h2>
         </motion.div>
 
@@ -60,9 +62,9 @@ export default function WhoItsFor() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="rounded-2xl bg-white/80 p-10 shadow-sm transition-all duration-200 hover:-translate-y-1.5 hover:shadow-lg"
+              className="glass-card p-10 transition-all duration-200 hover:-translate-y-1.5 hover:shadow-lg"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-navy-blue text-white">
+              <div className="brand-gradient mb-4 flex h-12 w-12 items-center justify-center rounded-xl text-white">
                 <p.icon className="h-6 w-6" />
               </div>
               <h3 className="mb-1 font-heading text-lg font-bold text-navy-blue">{p.title}</h3>

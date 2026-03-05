@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const navCol1 = [
   { label: "Why SkySuite", href: "#why-skysuite" },
   { label: "Scheduling", href: "#scheduling" },
-  { label: "Fleet and Maintenance", href: "#fleet" },
+  { label: "Fleet", href: "#fleet" },
   { label: "CFI Portal", href: "#cfi-portal" },
   { label: "Features", href: "#features" },
 ];
@@ -30,13 +30,13 @@ export default function Footer() {
           <div>
             <Image
               src="/brand/Logo-07.png"
-              alt="SkySuite"
+              alt="SkySuite - Every Flight Starts Here"
               width={180}
               height={54}
               className="h-10 w-auto object-contain"
             />
             <p className="mt-3 text-sm text-slate-400">
-              Your Co-Pilot for Smarter Operations
+              Every Flight Starts Here.
             </p>
           </div>
 

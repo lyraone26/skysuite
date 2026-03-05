@@ -77,7 +77,7 @@ export default function SpotlightCFI() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="rounded-2xl border border-slate-700/50 bg-slate-900 p-6 shadow-2xl">
+          <div className="rounded-2xl border border-slate-700/40 bg-slate-900 p-6 shadow-2xl">
             {/* Header */}
             <div className="mb-4 flex items-center justify-between">
               <span className="text-sm font-semibold text-white">Student Roster</span>
@@ -151,9 +151,11 @@ export default function SpotlightCFI() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+          <div className="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
             CFI Portal
-          </p>
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
+          </div>
           <h2 className="mt-6 font-heading text-4xl font-bold text-navy-blue md:text-5xl">
             The first platform built for the Chief Instructor.
           </h2>

@@ -64,7 +64,7 @@ export default function SpotlightScheduling() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="rounded-2xl border border-slate-700/50 bg-slate-900 p-3 shadow-2xl">
+          <div className="rounded-2xl border border-slate-700/40 bg-slate-900 p-6 shadow-2xl">
             {/* Header */}
             <div className="flex items-center justify-between rounded-t-xl bg-[#0d2847] px-4 py-2.5">
               <span className="text-xs font-semibold text-white">Schedule — This Week</span>
@@ -73,7 +73,7 @@ export default function SpotlightScheduling() {
                   <span
                     key={d}
                     className={`rounded-md px-2 py-0.5 text-[10px] font-medium ${
-                      i === 1 ? "bg-white/10 text-white" : "text-slate-500"
+                      i === 1 ? "bg-white/10 text-white" : "text-slate-400"
                     }`}
                   >
                     {d}
@@ -87,7 +87,7 @@ export default function SpotlightScheduling() {
               {/* Time headers */}
               <div className="mb-2 flex gap-1 pl-16">
                 {["8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM"].map((t) => (
-                  <div key={t} className="flex-1 text-center text-[9px] text-slate-500">{t}</div>
+                  <div key={t} className="flex-1 text-center text-[9px] text-slate-400">{t}</div>
                 ))}
               </div>
 
@@ -150,9 +150,11 @@ export default function SpotlightScheduling() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+          <div className="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
             Smart Scheduling
-          </p>
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
+          </div>
           <h2 className="mt-6 font-heading text-4xl font-bold text-navy-blue md:text-5xl">
             Frictionless booking. Unbreakable compliance.
           </h2>

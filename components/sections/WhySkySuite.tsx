@@ -43,9 +43,11 @@ export default function WhySkySuite() {
           viewport={{ once: true }}
           className="mb-6 text-center"
         >
-          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+          <div className="flex items-center justify-center gap-3 text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
             The Problem
-          </p>
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
+          </div>
         </motion.div>
 
         <motion.h2
@@ -93,7 +95,7 @@ export default function WhySkySuite() {
                 className="rounded-2xl bg-white/80 p-10 shadow-sm transition-all duration-200 hover:-translate-y-1.5 hover:shadow-lg"
               >
                 <div className="flex gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy-blue text-white">
+                  <div className="brand-gradient flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white">
                     <sol.icon className="h-5 w-5" />
                   </div>
                   <div>

@@ -6,7 +6,7 @@ import Image from "next/image";
 const navLinks = [
   { label: "Why SkySuite", href: "#why-skysuite" },
   { label: "Scheduling", href: "#scheduling" },
-  { label: "Fleet and Maintenance", href: "#fleet" },
+  { label: "Fleet", href: "#fleet" },
   { label: "CFI Portal", href: "#cfi-portal" },
   { label: "Features", href: "#features" },
 ];
@@ -34,18 +34,18 @@ export default function Nav() {
           <motion.div style={{ opacity: scrolled }}>
             <Image
               src="/brand/Logo-15.png"
-              alt="SkySuite"
+              alt="SkySuite - Every Flight Starts Here"
               width={160}
               height={48}
               className="h-9 w-auto object-contain"
               priority
             />
           </motion.div>
-          {/* Logo-07: white reversed with tagline — initial/dark hero state */}
+          {/* Logo-07: white reversed — initial/dark hero state */}
           <motion.div style={{ opacity: unscrolled }} className="absolute">
             <Image
               src="/brand/Logo-07.png"
-              alt="SkySuite"
+              alt="SkySuite - Every Flight Starts Here"
               width={160}
               height={48}
               className="h-9 w-auto object-contain"
@@ -70,7 +70,7 @@ export default function Nav() {
           href="#early-access"
           className="brand-gradient rounded-lg px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
         >
-          Request Early Access
+          Get Early Access
         </a>
       </div>
     </motion.nav>

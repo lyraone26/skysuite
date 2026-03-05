@@ -75,9 +75,11 @@ export default function SpotlightFleet() {
           viewport={{ once: true }}
           className="order-2 lg:order-1"
         >
-          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+          <div className="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
             Fleet Intelligence
-          </p>
+            <span className="h-px w-6 bg-[#07BCE7]/40" />
+          </div>
           <h2 className="mt-6 font-heading text-4xl font-bold text-white md:text-5xl">
             Every tail number accounted for.
           </h2>
@@ -111,7 +113,7 @@ export default function SpotlightFleet() {
           viewport={{ once: true, margin: "-100px" }}
           className="order-1 lg:order-2"
         >
-          <div className="rounded-2xl border border-white/10 bg-slate-900 p-3 shadow-2xl">
+          <div className="rounded-2xl border border-slate-700/40 bg-slate-900 p-6 shadow-2xl">
             {/* Header */}
             <div className="flex items-center gap-2 rounded-t-xl bg-[#0d2847] px-4 py-2.5">
               <span className="text-xs font-semibold text-white">Fleet Status</span>
@@ -136,10 +138,7 @@ export default function SpotlightFleet() {
                   className="mb-3 grid grid-cols-5 items-center gap-3 text-[11px]"
                 >
                   <span className="font-medium text-white">{a.tail}</span>
-                  <span className="text-slate-300">
-                    <span className="animate-status-pulse inline-block h-1.5 w-1.5 rounded-full bg-green-400 mr-1" />
-                    {a.hobbs}
-                  </span>
+                  <span className="text-slate-300">{a.hobbs}</span>
                   <span className={a.inspColor}>{a.nextInsp}</span>
                   <span className="flex items-center gap-1">
                     <span className={`h-2 w-2 rounded-full ${a.squawkDot}`} />

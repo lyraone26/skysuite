@@ -35,9 +35,11 @@ export default function EarlyAccess() {
 
           {!submitted ? (
             <>
-              <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+              <div className="flex items-center justify-center gap-3 text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+                <span className="h-px w-6 bg-[#07BCE7]/40" />
                 Early Access
-              </p>
+                <span className="h-px w-6 bg-[#07BCE7]/40" />
+              </div>
               <h2 className="mt-6 mb-3 font-heading text-3xl font-bold text-white">
                 Be first in the pattern
               </h2>

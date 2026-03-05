@@ -1,0 +1,57 @@
+SkySuite — V2 Feedback & V3 Direction
+
+WHAT V2 GOT RIGHT — DON'T TOUCH
+The dark hero background is correct. Keep it.
+The type scale on the headline is much closer — the size and weight are working.
+"One Platform. Every Role. Every Workflow." section reads well and the card grid layout is solid.
+The dashboard mockup inside a device frame is the right idea. The execution just needs to go further.
+
+HERO — Replace the mockup entirely
+The schedule grid mockup in the hero is functional but it's not aspirational. A grid of colored blocks doesn't make someone feel anything. Cirrus doesn't put a screenshot in their hero. They put the product itself — photographed beautifully, lit dramatically, commanding the entire frame.
+For V3, remove the dashboard mockup from the hero and replace it with a full-bleed hero background image. The right image is a Cirrus SR or Vision Jet cockpit — specifically the instrument panel at night or dusk, glowing with avionics light, shot from the pilot's perspective looking out toward the horizon or runway lights. This image does three things at once: it's immediately aspirational to anyone in aviation, it connects SkySuite visually to the instrument panel (the operating environment), and it gives the hero the cinematic quality that no UI mockup ever will.
+Source this from Cirrus Aircraft's press kit (cirrusaircraft.com/media) or license from a photographer. The image should be full-bleed behind the hero text, with a dark navy gradient overlay (bottom 40% of the image fades to #011830) so the headline and CTAs remain fully legible. The text sits in the lower-left or center-left of the hero over the darkened portion.
+If a cockpit photo isn't available immediately, an alternative is a dramatic aerial shot — aircraft at altitude over clouds at golden hour, shot from slightly above and behind. The emotional register is freedom, precision, and mastery. Not a grid of colored blocks.
+Tagline change: update to "Every Flight Starts Here" across the entire site. Remove all instances of "Your Co-Pilot for Smarter Operations." The new line is shorter, more commanding, and works at large scale without wrapping awkwardly.
+
+HERO — What stays, what changes
+Keep: dark background, headline size and weight, the two CTAs, the trust line below.
+Change: replace the mockup with the photo background as described. Remove the floating badges for now — they competed with the mockup and without it they'll float in empty space. Instead, place a single subtle stat line beneath the trust bar: "Trusted by operators managing 200+ aircraft across the US." or similar social proof in small muted text.
+The headline restructures slightly for the new tagline. Suggested treatment: "Every Flight" in white at 80px, "Starts Here." in the brand gradient. Two lines, commanding, nothing below 72px.
+
+MODULES — Update the full list
+The current six-card grid is missing several modules. Expand to a 3x3 grid (nine cards) with these modules exactly:
+Smart Scheduling — drag-and-drop booking, real-time conflict detection, dispatch compliance enforcement
+Fleet Management — aircraft profiles, Hobbs/Tach tracking, airworthiness status, engine monitor logs
+Maintenance Tracking — work orders, inspection schedules, squawk management, AD compliance
+CFI Portal — endorsement management, student rosters, stage checks, Part 61/141 compliance, FAA Audit Mode
+Billing & Payments — automated billing, Stripe integration, wet/dry rates, instructor and stage check fees
+Pilot Onboarding — member applications, document collection, checkout workflows, role assignment
+Insights & Analytics — utilization reporting, revenue gap analysis, compliance scoring, instructor performance
+Live Weather — METAR/TAF display, VFR/MVFR/IFR/LIFR indicators, surfaced at dispatch
+Role-Based Dashboards — tailored views for pilots, instructors, dispatchers, admins, and maintenance
+Keep the featured card treatment for CFI Portal — it remains the hero of the grid. Consider a second featured treatment for Smart Scheduling since it is the entry point for most users. Two featured cards, seven standard, in a 3x3 layout.
+
+WHAT ELSE NEEDS TO CHANGE IN V3
+The feature cards in image 2 have the right structure but feel cold. The icon blocks are grey circles with white icons — they read like placeholder icons. For V3, replace the grey circle icon blocks with the gradient icon block treatment (Sky Blue to Bright Blue gradient background, white icon). This one change makes every card feel intentional instead of templated.
+The card borders in image 2 are very subtle — almost invisible. Make them slightly more visible on hover: a 1px border that transitions to rgba(7,188,231,0.3) on hover, combined with the translateY(-6px) lift. Right now hover does almost nothing and it makes the cards feel static.
+Body copy on the cards is too long. Each card should have a headline and one sentence maximum — not two sentences. Cut every card description to its single most important idea. Brevity reads as confidence.
+The "PLATFORM OVERVIEW" eyebrow label above the section headline is correct in concept but the styling needs refinement — it should be Sky Blue, 11px, all caps, 0.15em letter-spacing, with a short 24px horizontal rule on either side of the text. That treatment elevates it from a label to a design moment.
+
+SECTIONS STILL MISSING FROM V2
+The three spotlight modules — Scheduling, Fleet & Maintenance, CFI Portal — with their UI panels and editorial copy are still not in the live site. These are the highest-conversion sections on the page because they show the product in context. V3 must include all three. Refer to the V2 brief for the full spec on each. Priority order: CFI Portal first (most differentiated), Fleet second, Scheduling third.
+The "Who It's For" section — Flight Schools, Flight Clubs, Aircraft Partnerships — is also still missing. This is the section that makes a visitor feel seen. Add it before the sign-up.
+
+SPACING — Still needs work throughout
+The cards in image 2 have insufficient internal padding — the icon, headline, and body copy feel cramped inside each card. Minimum 32px padding on all sides, 40px preferred. The gap between the icon block and the headline should be 20px. The gap between headline and body copy should be 12px.
+Section vertical padding is still too tight in the features section. Minimum 140px top and bottom on the features section. The headline needs more air above it before the eyebrow label.
+
+PRIORITY ORDER FOR V3
+
+Hero photo swap — cockpit or aerial image, full bleed, gradient overlay. Single biggest impact.
+Tagline update to "Every Flight Starts Here" sitewide.
+Modules expanded to the full nine-card 3x3 grid with updated list.
+Add the three spotlight modules — CFI Portal, Fleet & Maintenance, Scheduling.
+Add "Who It's For" section.
+Icon blocks updated to gradient treatment on all nine cards.
+Card hover states — border glow and lift.
+Spacing and padding throughout.
