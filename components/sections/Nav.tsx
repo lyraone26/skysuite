@@ -6,11 +6,10 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
+  { label: "Roger AI", href: "#roger" },
   { label: "Why SkySuite", href: "#why-skysuite" },
-  { label: "Scheduling", href: "#scheduling" },
-  { label: "Fleet", href: "#fleet" },
-  { label: "CFI Portal", href: "#cfi-portal" },
   { label: "Features", href: "#features" },
+  { label: "Pricing", href: "#pricing" },
 ];
 
 export default function Nav() {

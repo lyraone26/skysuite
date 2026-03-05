@@ -29,7 +29,7 @@ const bullets = [
 
 export default function SpotlightRoger() {
   return (
-    <section className="bg-[#011830] py-[80px] md:py-[120px] lg:py-[160px]">
+    <section id="roger" className="bg-[#011830] py-[80px] md:py-[120px] lg:py-[160px]">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
         {/* Copy LEFT */}
         <motion.div

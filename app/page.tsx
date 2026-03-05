@@ -1,7 +1,6 @@
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
 import SpotlightRoger from "@/components/sections/SpotlightRoger";
-import ProofBar from "@/components/sections/ProofBar";
 import WhySkySuite from "@/components/sections/WhySkySuite";
 import FeatureGrid from "@/components/sections/FeatureGrid";
 import SpotlightScheduling from "@/components/sections/SpotlightScheduling";
@@ -22,7 +21,6 @@ export default function Home() {
       <Nav />
       <Hero />
       <SpotlightRoger />
-      <ProofBar />
       <WhySkySuite />
       <FeatureGrid />
       <SpotlightScheduling />

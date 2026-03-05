@@ -1,0 +1,29 @@
+V5 Feedback
+
+-Instead of "See it in action" replace with "See Features"
+
+-let's remove mention of: "COASTAL AVIATION
+MOUNTAIN AIR CLUB
+SKYLINE FLIGHT ACADEMY
+BLUE RIDGE FLYING CLUB
+SUMMIT AIR PARTNERSHIP"
+
+-need to update competitor table with: "C:\Users\lyraonelab\Dropbox\AgentProjects-01\skysuite\_docs\competitive-table.html"
+
+
+-Add pricing nav button at top after features, pointing it to pricing cards
+-Add Roger AI nav button at top before features, pointing to Roger Ai
+-remove mention of mobile app, as it will be mobile friendly but we are not developing a mobile app in V1 
+
+-Remove these as no relevancy: 
+"Integrated Modules
+
+14
+Compliance Hard Gates
+
+100%
+Records Cryptographically Hashed
+
+0
+Minutes of Audit Prep"
+

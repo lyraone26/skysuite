@@ -25,7 +25,7 @@ const plans: Plan[] = [
       "Scheduling",
       "Basic fleet tracking",
       "Member management",
-      "Mobile app",
+      "Mobile-friendly dashboard",
     ],
     cta: "Get Started Free",
   },
@@ -76,7 +76,7 @@ const fadeUp = {
 
 export default function Pricing() {
   return (
-    <section className="bg-[#011830] py-[60px] md:py-[100px]">
+    <section id="pricing" className="bg-[#011830] py-[60px] md:py-[100px]">
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

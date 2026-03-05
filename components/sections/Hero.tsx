@@ -110,7 +110,7 @@ export default function Hero() {
               href="#features"
               className="rounded-lg border border-white/30 px-8 py-4 font-semibold text-white transition-colors hover:bg-white/10"
             >
-              See It In Action
+              See Features
             </a>
           </motion.div>
 
