@@ -1,0 +1,87 @@
+SkySuite — Pre-Launch Landing Page Design Brief
+Build a pre-launch marketing landing page for SkySuite, a premium aviation operations platform for flight schools, flight clubs, and aircraft partnerships. The goal is to drive early access sign-ups. This is not a legacy FBO app with a new skin — it should feel like the Apple of aviation software. Think Stripe, Linear, or Vercel energy applied to flight operations.
+
+BRAND ASSETS & CONTEXT FILES
+Read all of these before starting:
+SkySuite_BrandBook_V0.pdf — official logo usage, color palette (hex values), typography, brand values
+SKYSUITE_WEBSITE_BRIEF.md — full site brief including page structure, feature list, copy guidelines, tech stack, and Vercel deployment notes
+design-guidance-for-mockups.md — design system: glass card styles, spacing, layout breakpoints, component patterns, UX rules
+globals.css — exact CSS tokens, glass classes, gradients, and animation keyframes already defined in the app
+README_SS.md — logo file locations, dimensions, and usage code
+
+BRAND IDENTITY
+Tagline: "Your Co-Pilot for Smarter Operations"
+Colors: Sky Blue #07BCE7 · Navy #022C55 · Bright Blue #0941C4 · Sage #C2C1A5 · Cream #F5F9E9
+Brand gradient (CTAs, hero accents): linear-gradient(135deg, #07BCE7, #0941C4)
+Typography: Montserrat SemiBold/Bold for all headings · Inter Regular for body text
+Visual language: Liquid glass — frosted card surfaces, backdrop blur, soft borders. Generous negative space. Confident typography. Subtle depth without clutter. The aesthetic should feel like premium fintech or a top-tier developer tool — not clipart cockpits and stock photos of Cessnas.
+
+DESIGN DIRECTION
+Luxury modern SaaS. The reference points are Linear.app, Stripe, Vercel, and Raycast — not FlightAware or legacy aviation portals. Specific direction:
+Dark hero section anchored in deep navy (#022C55) with the brand gradient used sparingly as a luminous accent — glowing edges, gradient text on the headline, lit UI elements. Not a flat dark background. It should feel like depth.
+Glass cards float over the background with visible layering — light cards on dark sections, dark cards on light sections. Real contrast, real hierarchy.
+The dashboard mockup in the hero should look like actual product UI — not a wireframe. Clean data, readable labels, status indicators, the kind of thing that makes someone say "that looks like software I'd actually want to use."
+Typography does heavy lifting. Big, confident headline with a gradient on the key phrase. Tight leading. Generous whitespace around it. No paragraph-length headlines.
+Motion is purposeful and restrained. One orchestrated hero entrance. Scroll reveals that feel inevitable, not bouncy. Hover states that reward attention without demanding it.
+Aviation identity comes through in the content and terminology — not through clipart or cliche imagery. The product IS the aviation identity.
+
+PAGE SECTIONS (in order)
+
+Sticky Nav — Logo left, minimal links center, "Request Early Access" gradient CTA right. Frosted glass on scroll.
+Hero — Dark navy base. Large gradient headline. Subheadline in one tight sentence. Two CTAs: primary gradient button + ghost secondary. Trust line beneath: "Part 61 & 141 Ready · FAA Audit Defensible · Zero Setup Headaches". Right side: premium dashboard UI mockup with 3D perspective tilt, floating compliance badge, floating fleet status badge. Animated background: deep gradient mesh with slow-moving luminous orbs, subtle grid.
+Proof Bar — Minimal. Light text on a slightly elevated surface. "Built for aviation operators" with flight school/club names in muted caps. No logos needed.
+Problem → Solution — Two columns. Left: three pain points flight schools and clubs face today — disconnected tools, idle aircraft draining fixed costs, compliance gaps that only surface at the worst time. Right: three SkySuite solutions styled as elevated glass cards with gradient icon blocks. Direct, punchy copy. No fluff.
+Features Grid — Three spotlight modules given full editorial treatment (see below), each with a dark UI panel on one side and benefit-driven copy on the other. Alternate left/right layout per module. Below the three spotlights, a supporting 3x2 card grid covers the remaining features: Billing & Payments, Live Weather, Role-Based Dashboards, Admin & Member Management, Resource Booking, AI-Assisted Insights.
+
+SPOTLIGHT MODULE 1 — Smart Scheduling & Dispatch
+The UI panel shows a weekly schedule grid with aircraft rows, colored reservation blocks (lesson green, rental blue, checkride purple, maintenance orange), and a dispatch compliance sidebar showing instructor currency dots and endorsement validity. Copy angle: frictionless booking for members, real-time conflict detection, dispatch that checks compliance automatically — so the front desk isn't the last line of defense.
+SPOTLIGHT MODULE 2 — Fleet Intelligence & Maintenance
+The UI panel shows an aircraft status board with tail numbers, Hobbs time, next inspection countdowns, open squawk severity indicators, and a utilization trend sparkline per aircraft. Copy angle: three distinct value propositions presented as a tight three-column stat block within the section —
+"Turn idle tail numbers into revenue." Flight schools and rental operations have fixed costs that run whether the aircraft flies or not. SkySuite surfaces utilization gaps, flags aircraft sitting idle across booking windows, and gives operators the data to act — turning underperforming assets into scheduled flights.
+"Give your club's fixed costs somewhere to land." Flight clubs exist to spread the cost of ownership. SkySuite tracks utilization per member, surfaces who's flying and who isn't, and gives club managers the visibility to keep costs distributed fairly and keep members engaged.
+"Operational confidence, not just maintenance logs." SkySuite doesn't replace your A&P or your judgment — it makes sure nothing falls through the cracks. Inspection countdowns, squawk tracking, AD compliance, and airworthiness status are surfaced at dispatch so your team always has the information they need, when they need it. The decisions stay with your people. The visibility stays on.
+SPOTLIGHT MODULE 3 — CFI Portal & Compliance
+The UI panel shows a student roster with progress bars, endorsement status chips, stage check indicators, and an audit-ready badge. Copy angle: the first platform built for the Chief Instructor, not just the scheduler. Part 61 and Part 141 on enforced separate logic paths. Solo dispatch hard-blocked without a valid current endorsement. Immutable records. One-click FAA Audit Mode. The person whose certificate is on the line finally has the visibility they need.
+
+Stats Bar — Deep navy background. Four large animated counters with gradient numerals. 9 modules · 14 compliance hard gates · 100% records cryptographically hashed · 0 minutes audit prep. Supporting descriptor under each. Subtle radial glow behind numbers.
+Who It's For — Three cards side by side, each speaking directly to a different operator type:
+
+Flight Schools: "Built around the way you train." Scheduling, CFI management, compliance tracking, and billing — integrated so your instructors spend time teaching, not doing paperwork.
+Flight Clubs: "Every member flies. Every cost lands fairly." Utilization tracking, member management, maintenance visibility, and automated billing — so the club runs itself and your fixed costs are always covered.
+Aircraft Partnerships: "Shared ownership, zero shared headaches." Booking, Hobbs tracking, maintenance scheduling, and cost splitting — one platform for everyone on the tail number.
+
+Early Access Sign-Up — Centered glass card with significant padding. Gradient icon block at top. "Be first in the pattern." headline. One-sentence subheadline. Email input + gradient CTA. "Limited beta cohort" urgency chip. No noise.
+Footer — Clean. Logo left, nav links center, CTA right. Legal row below with separator. Dark navy background.
+
+
+COPY GUIDANCE FOR FLEET & SAFETY SECTIONS
+Never make direct safety claims or imply the software prevents accidents or guarantees compliance. Instead, frame SkySuite as the operational layer that gives your team better information, earlier — so the people responsible for decisions can make them with confidence. Phrases that work: "so nothing falls through the cracks," "the information your team needs, when they need it," "surfaces the gaps before they become problems," "keeps your operation running the way it's supposed to." Phrases to avoid: "prevents accidents," "guarantees compliance," "makes your fleet safer." The tool informs. The people decide.
+
+ANIMATIONS
+Hero background: slow-drifting luminous gradient orbs, subtle animated grid lines
+Hero entrance: staggered fade-up on badge, headline, subheadline, CTAs, trust line — 80ms delay each
+Dashboard mockup: 3D perspective tilt on load, smoothly levels on cursor hover, gentle vertical float loop
+Scroll reveals: fade + translateY(24px) on every section, 100-150ms stagger per card
+Spotlight module UI panels: slide in from the side as the section enters the viewport
+Feature cards: translateY(-6px) lift + gradient border glow on hover
+Stats: counter animation from 0 to value, eased, triggered on scroll into view
+Utilization sparklines in fleet panel: draw-on animation as the section scrolls into view
+CFI progress bars: animate width from 0 on scroll into view
+CTA buttons: shimmer sweep on hover (defined in globals.css)
+All motion: ease-out curves, nothing bouncy, nothing that calls attention to itself
+
+TECH STACK
+Next.js 16 App Router · React 19 · TypeScript strict · Tailwind v4 · shadcn/ui New York style · Framer Motion 12 · Lucide React icons · Deployed on Vercel. Full configuration in SKYSUITE_WEBSITE_BRIEF.md Section 2. Use next/image for all images and next/font for Montserrat and Inter.
+
+AUDIENCE & TONE
+Flight school owners, Chief Flight Instructors, club managers, dispatchers. They are professionals who know their domain deeply. Write like you respect their intelligence. Short sentences. Active voice. Benefit-driven. Aviation-literate — use correct terminology throughout: tail number, Hobbs/Tach, squawk, CFI/CFII/MEI, VFR/IFR, METAR/TAF, wet/dry rate. Full terminology reference in SKYSUITE_WEBSITE_BRIEF.md Section 6.
+The tone is confident and precise — the same way good aviation software should be.
+
+NON-NEGOTIABLES
+No placeholder lorem ipsum in final delivery
+No stock aviation clipart or Cessna photos — the UI is the visual
+Logo used strictly per brand book (no stretching, rotating, blurring, or busy backgrounds)
+Mobile-first, fully responsive — breakpoints defined in design-guidance-for-mockups.md
+Light cream theme on content sections, dark navy on hero and stats — deliberate contrast
+Lighthouse 90+ across all categories
+No cookie-cutter SaaS template energy — this should look like it was designed, not generated
