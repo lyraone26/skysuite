@@ -1,0 +1,83 @@
+SkySuite — V1 Feedback & V2 Direction
+Overall: the structure is right and the content is all there. What's missing is the emotional register. The site currently reads as a feature list. Cirrus and Ferrari don't list features — they sell desire. Every section on V1 answers "what does it do?" V2 needs to answer "how will this change how I operate?" Fix the feeling first. The details follow.
+
+Use Logo-08 ("C:\Users\lyraonelab\Dropbox\AgentProjects-01\skysuite\public\brand\Logo-08.png") and Logo-15 ("C:\Users\lyraonelab\Dropbox\AgentProjects-01\skysuite\public\brand\Logo-15.png") where applicable. 
+
+THE ONE-SENTENCE DIAGNOSIS
+V1 feels like a SaaS template that was filled in with aviation content. V2 needs to feel like it was built by people who understand what it means to run a flight school — and had the design budget of a company that respects its customers.
+
+HERO — Highest priority fix
+The hero is where you're losing people. It's light, flat, and templated. Cirrus opens with a near-black full-bleed background and a single aircraft glowing against it. Ferrari puts the car at 80% viewport width against near-black with one headline and one button. Nothing competes with the product.
+For V2:
+Background changes to deep navy #011830, full-bleed, 100vh. Not light grey. Not white. Dark and atmospheric — like an instrument panel at night.
+The dashboard mockup needs to glow. Right now it sits on a white card. It should float against darkness with a Sky Blue radial glow emanating from the screen edges. Add a minimal dark device frame around it. The product needs to look like something you'd want to touch.
+Headline font size up 30–40%. Montserrat 800, minimum 72px on desktop, letter-spacing -0.03em, line-height 1.0. The gradient (#07BCE7 → #0941C4) goes on the key phrase "Smarter Operations" only — white for everything else. Gradient scarcity is what makes it feel premium.
+Remove the trust bar from directly under the CTAs. Give the headline room to breathe. Move those proof points lower in the page where they earn their place.
+Two CTAs with clear hierarchy: primary is the gradient button with a glow shadow, secondary is ghost with white text. Right now they look equal. They shouldn't.
+Hero entrance is a choreographed sequence — not everything fading in at once. Background first (300ms), headline drifts up (400ms), subheadline (500ms), CTAs (600ms), trust line (700ms). Staggered. Inevitable.
+
+TYPOGRAPHY — Fastest fix, biggest impact
+The type scale is too uniform. Headlines, subheadlines, body, and labels all feel like similar weights and sizes. There's no drama.
+What Cirrus and Ferrari do: extreme contrast. The hero headline might be 80px. The next line is 16px. That gap creates tension that feels intentional and expensive.
+For V2: hero H1 at 72–80px. Section headlines at 48–56px. Body at 16–18px Inter, line-height 1.7, rgba(255,255,255,0.65) on dark sections. Eyebrow labels above section headlines: Inter 500, 11px, all caps, letter-spacing 0.15em, Sky Blue. These should whisper. The headline should command.
+
+COLOR — Discipline is luxury
+Sky Blue is appearing in tags, borders, icons, badges, buttons, text, and backgrounds. When your accent is everywhere, it stops being an accent. Ferrari uses red maybe three times on the entire homepage. Each hit lands like a pulse.
+For V2: Sky Blue (#07BCE7) appears in exactly four places — the logo, the primary CTA button, the gradient on the hero headline key phrase, and critical status indicators (green/amber/red dispatch dots). Remove it from everywhere else. What replaces it: navy, white, and cream do the work. The restraint is what makes the brand moments land.
+Dark sections go to #011830 — slightly deeper than the current navy. It reads richer and creates more contrast against the glass cards.
+
+SECTION RHYTHM — The page has no pulse
+Every section in V1 is the same height, same padding, same energy. Luxury brands create rhythm through alternation and contrast.
+For V2: the page alternates deliberately — dark navy, cream, dark navy, cream — throughout the entire scroll. This is non-negotiable. It creates the sense that the page was paced, not just stacked.
+Sections to be dark (#011830): Hero, Features Grid ("One Platform. Every Role. Every Workflow."), Stats Bar, Sign-Up.
+Sections to be cream (#F5F7F0): Proof Bar, Why SkySuite, Scheduling Spotlight, CFI Portal Spotlight, Who It's For.
+Fleet & Maintenance Spotlight: dark navy, so it alternates correctly after the Scheduling section.
+
+MISSING SECTIONS — Add these to V2
+V1 is missing three spotlight modules that need to be in the body of the page, each with a UI panel and editorial copy. These are the moments that make someone say "I need this." Add them in this order after the Features Grid:
+Spotlight 1 — Smart Scheduling & Dispatch. Cream background. UI panel left, copy right. The panel shows a weekly schedule grid: aircraft as rows with tail number labels, time slots as columns, color-coded reservation blocks (lesson green, rental blue, checkride purple, maintenance orange). Below the grid: a dispatch compliance sidebar showing instructor currency dots and endorsement validity chips with a "✓ Dispatch Compliant" badge. Copy headline: "Frictionless booking. Unbreakable compliance." Panel slides in from the left on scroll.
+Spotlight 2 — Fleet Intelligence & Maintenance. Dark navy background. Copy left, UI panel right. The panel shows an aircraft status board with tail number, Hobbs time, next inspection countdown, squawk severity dot, and a utilization sparkline per row. Sparklines draw on as the section enters the viewport. Copy opens with three mini stat cards in a row — not bullet points:
+"Turn idle tail numbers into revenue." Fixed costs run whether the aircraft flies or not. SkySuite surfaces utilization gaps and flags idle aircraft across booking windows so operators can act.
+"Give your club's fixed costs somewhere to land." Track utilization per member, surface who's flying and who isn't, keep costs distributed fairly and members engaged.
+"Operational confidence, not just maintenance logs." SkySuite doesn't replace your A&P or your judgment — it makes sure nothing falls through the cracks. Inspection countdowns, squawk tracking, AD compliance, and airworthiness status surfaced at dispatch so your team always has what they need. The decisions stay with your people. The visibility stays on.
+Spotlight 3 — CFI Portal. Cream background. UI panel left, copy right. This is the hero module — give it the most visual fidelity. The panel is a dark navy student roster card showing student rows with avatar initials, name, training track (Part 141 · Stage 2 · PPL SEL), gradient progress bar, and endorsement status chip (green "✓ Solo", amber "⏳ 14d", blue "✓ XC"). Top right of the panel: a pulsing green "● Audit Ready" badge. Progress bars animate from 0 on scroll entry. Copy headline: "The first platform built for the Chief Instructor, not just the scheduler." Five bullet points: Part 61 and 141 on enforced separate logic paths. Solo dispatch hard-blocked without valid 61.87 endorsement. Stage checks require authorized check instructor — primary instructor assignment blocked at system level. Immutable records with SHA-256 hashing. One-click FAA Audit Mode. Small disclaimer beneath the CTA in muted text: "SkySuite surfaces the information your team needs. The decisions stay with your people."
+
+UI MOCKUPS — Make them look like real product
+Every mockup in V1 reads like an HTML table or a wireframe. The product needs to look like software someone would pay for.
+For V2: rounded corners on every element. Proper drop shadows. Real spacing and padding inside the mockups. Color-coded reservation blocks with visible tail numbers and student names in small readable type. Status dots with a subtle pulse animation on active/airworthy aircraft. CFI progress bars with gradient fills, not solid bars. All mockups inside a minimal dark device frame, floating with dramatic shadow and a subtle edge glow.
+
+SPACING — Double everything
+Cards have insufficient internal padding. Sections run together. The page doesn't breathe. Ferrari's rule: if in doubt, double the whitespace.
+For V2: section vertical padding minimum 120px top and bottom, 160px on hero and spotlight modules. Card internal padding minimum 40px all sides. 24px between headline and first body paragraph. 40px between body paragraph and CTA.
+
+ANIMATIONS — Replace generic with intentional
+V1 has generic fades. V2 needs motion that feels designed.
+Spotlight UI panels: slide in from outside the viewport as sections scroll into view — 60px of travel. Not fade. Slide.
+Dashboard mockup in hero: 6-second vertical float loop, 12px travel. Constant. Subtle. Like something in zero gravity.
+Stats counters: 0 to final value over 1.8 seconds, cubic-bezier that decelerates hard at the end. Should feel like something landing, not just counting.
+Utilization sparklines in fleet panel: SVG draw-on animation triggered on scroll entry.
+CFI progress bars: animate width from 0 on scroll entry.
+All curves ease-out only. Nothing bounces. Ever.
+
+NAV — Remove dead links
+V1 has Pricing and About in the nav. Neither page exists. Remove them. For a pre-launch page the nav should only link to sections that exist on the page. Replace with: Why SkySuite · Scheduling · Fleet & Maintenance · CFI Portal · Features. The Request Early Access button stays — make it the gradient button, not an outline.
+
+FOOTER — Currently an afterthought
+V1 footer is two lines. For V2: full dark navy background matching the hero. Logo with tagline beneath it left. Two columns of nav links center. Condensed email sign-up right — "Join the waitlist" label, email input, arrow button. Divider line. Bottom row: copyright left, Privacy · Terms right. Optional small centered line above copyright: "Built for the people who keep aviation moving."
+
+COPY GUARDRAILS — Safety and compliance language
+Never claim the software prevents accidents or guarantees compliance. Frame it as the operational layer that gives your team better information, earlier. Phrases that work: "so nothing falls through the cracks," "the information your team needs, when they need it," "surfaces the gaps before they become problems." Phrases to avoid: "prevents accidents," "guarantees compliance," "makes your fleet safer." The tool informs. The people decide.
+
+PRIORITY ORDER FOR V2
+
+Hero — darkness, type scale, mockup glow. Biggest ROI.
+Color discipline — Sky Blue in four places only, everywhere else removed.
+Section alternation — dark/cream rhythm enforced throughout.
+Add the three spotlight modules — Scheduling, Fleet, CFI Portal.
+Spacing — double all padding across the board.
+UI mockup fidelity — real product, not wireframes.
+Motion — replace generic fades with the intentional sequences above.
+Nav and footer cleanup.
+
+
+Get 1 through 3 right and the page will already feel like a different product. The bones from V1 are solid. V2 is about elevating the execution to match the brand.

@@ -29,24 +29,29 @@ const fadeUp = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.1, duration: 0.5 },
+    transition: { delay: i * 0.1, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const },
   }),
 };
 
 export default function WhoItsFor() {
   return (
-    <section className="py-20">
+    <section className="bg-[#F5F7F0] py-[120px]">
       <div className="mx-auto max-w-7xl px-6">
-        <motion.h2
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12 text-center font-heading text-3xl font-bold text-navy-blue md:text-4xl"
+          className="mb-6 text-center"
         >
-          Built for every role in your operation
-        </motion.h2>
+          <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#07BCE7]">
+            Who It&apos;s For
+          </p>
+          <h2 className="mt-6 font-heading text-4xl font-bold text-navy-blue md:text-5xl">
+            Built for every role in your operation
+          </h2>
+        </motion.div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {personas.map((p, i) => (
             <motion.div
               key={p.title}
@@ -55,14 +60,14 @@ export default function WhoItsFor() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="glass-card p-8"
+              className="rounded-2xl bg-white/80 p-10 shadow-sm transition-all duration-200 hover:-translate-y-1.5 hover:shadow-lg"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full brand-gradient text-white">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-navy-blue text-white">
                 <p.icon className="h-6 w-6" />
               </div>
               <h3 className="mb-1 font-heading text-lg font-bold text-navy-blue">{p.title}</h3>
               <p className="mb-3 text-sm italic text-slate-500">{p.tagline}</p>
-              <p className="text-sm text-slate-600">{p.desc}</p>
+              <p className="text-base leading-[1.7] text-slate-700">{p.desc}</p>
             </motion.div>
           ))}
         </div>

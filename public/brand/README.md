@@ -1,6 +1,7 @@
-# SkySuite Brand Assets
+# SkySuite Brand Logo Assignments
 
-Place the following files in this directory:
-
-- `logo-full.png` — 2048×616 px horizontal logo for header, hero, marketing banners
-- `icon.png` — 1892×1784 px square icon for favicon, social images, square placements
+| Logo File   | Description                          | Usage                                         |
+|-------------|--------------------------------------|-----------------------------------------------|
+| Logo-07.png | White reversed with tagline          | Nav initial state (over dark hero), Footer     |
+| Logo-08.png | Gradient icon only                   | Favicon, icon mark, small placements           |
+| Logo-15.png | Full-color horizontal lockup (no tagline) | Nav scrolled state (frosted glass background) |

@@ -3,13 +3,19 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
-const navLinks = ["Features", "Pricing", "About"];
+const navLinks = [
+  { label: "Why SkySuite", href: "#why-skysuite" },
+  { label: "Scheduling", href: "#scheduling" },
+  { label: "Fleet and Maintenance", href: "#fleet" },
+  { label: "CFI Portal", href: "#cfi-portal" },
+  { label: "Features", href: "#features" },
+];
 
 export default function Nav() {
   const { scrollY } = useScroll();
   const bgOpacity = useTransform(scrollY, [0, 100], [0, 1]);
-  // Switch logo: white reversed on dark hero (scrollY=0), full-color on frosted glass
   const scrolled = useTransform(scrollY, [0, 80], [0, 1]);
+  const unscrolled = useTransform(scrollY, [0, 80], [1, 0]);
 
   return (
     <motion.nav
@@ -24,10 +30,10 @@ export default function Nav() {
       />
       <div className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center">
-          {/* Full-color logo — shown on frosted glass (scrolled state) */}
+          {/* Logo-15: full-color horizontal lockup — scrolled/frosted state */}
           <motion.div style={{ opacity: scrolled }}>
             <Image
-              src="/brand/Logo-01.png"
+              src="/brand/Logo-15.png"
               alt="SkySuite"
               width={160}
               height={48}
@@ -35,11 +41,8 @@ export default function Nav() {
               priority
             />
           </motion.div>
-          {/* White reversed logo — shown on dark hero (unscrolled state) */}
-          <motion.div
-            style={{ opacity: useTransform(scrollY, [0, 80], [1, 0]) }}
-            className="absolute"
-          >
+          {/* Logo-07: white reversed with tagline — initial/dark hero state */}
+          <motion.div style={{ opacity: unscrolled }} className="absolute">
             <Image
               src="/brand/Logo-07.png"
               alt="SkySuite"
@@ -51,14 +54,14 @@ export default function Nav() {
           </motion.div>
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}
+              href={link.href}
               className="text-sm font-medium text-slate-600 transition-colors hover:text-navy-blue"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>

@@ -1,9 +1,11 @@
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
 import ProofBar from "@/components/sections/ProofBar";
-import ProblemSolution from "@/components/sections/ProblemSolution";
-import FeaturesSpotlight from "@/components/sections/FeaturesSpotlight";
+import WhySkySuite from "@/components/sections/WhySkySuite";
 import FeatureGrid from "@/components/sections/FeatureGrid";
+import SpotlightScheduling from "@/components/sections/SpotlightScheduling";
+import SpotlightFleet from "@/components/sections/SpotlightFleet";
+import SpotlightCFI from "@/components/sections/SpotlightCFI";
 import StatsBar from "@/components/sections/StatsBar";
 import WhoItsFor from "@/components/sections/WhoItsFor";
 import EarlyAccess from "@/components/sections/EarlyAccess";
@@ -15,9 +17,11 @@ export default function Home() {
       <Nav />
       <Hero />
       <ProofBar />
-      <ProblemSolution />
-      <FeaturesSpotlight />
+      <WhySkySuite />
       <FeatureGrid />
+      <SpotlightScheduling />
+      <SpotlightFleet />
+      <SpotlightCFI />
       <StatsBar />
       <WhoItsFor />
       <EarlyAccess />

@@ -16,6 +16,7 @@
   /* Brand Colors */
   --sky-blue: #07BCE7;
   --navy-blue: #022C55;
+  --navy-deep: #011830;
   --bright-blue: #0941C4;
   --sage: #C2C1A5;
   --cream: #F5F9E9;
@@ -61,7 +62,7 @@
 
   /* shadcn theme — light premium palette */
   --radius: 0.625rem;
-  --background: #F5F7F0;
+  --background: #011830;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -110,6 +111,7 @@
   --color-bright-blue: var(--bright-blue);
   --color-sage: var(--sage);
   --color-cream: var(--cream);
+  --color-navy-deep: var(--navy-deep);
 
   /* Semantic Colors */
   --color-success: var(--color-success);
@@ -337,6 +339,33 @@ a.brand-gradient:hover::after,
 
 .hero-orb-2 {
   animation: orb-float-2 20s ease-in-out infinite;
+}
+
+/* Dashboard float animation */
+@keyframes float-loop {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float-loop 6s ease-in-out infinite;
+}
+
+/* Status dot pulse */
+@keyframes status-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-status-pulse {
+  animation: status-pulse 2s ease-in-out infinite;
+}
+
+/* Sparkline draw */
+@keyframes draw-line {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
 }
 
 /* =============================================

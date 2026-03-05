@@ -8,7 +8,7 @@ const orgs = [
 
 export default function ProofBar() {
   return (
-    <section className="border-t border-b border-slate-200/60 py-8">
+    <section className="bg-[#F5F7F0] py-10">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-4 px-6">
         <span className="text-sm text-slate-400">Built for aviation operators</span>
         <span className="text-slate-300">|</span>
