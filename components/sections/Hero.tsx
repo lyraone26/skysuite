@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/hero-cockpit.jpg"
-          alt="SkySuite - Every Flight Starts Here"
+          alt="SkySuite - Flight operations, finally intelligent."
           fill
           className="object-cover object-center"
           priority
@@ -44,7 +44,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative mx-auto flex min-h-screen max-w-7xl items-end px-6 pb-[120px] pt-[200px] lg:items-center lg:pb-0 lg:pt-0">
+      <div className="relative mx-auto flex min-h-screen max-w-7xl items-end px-6 pb-[80px] pt-[140px] md:pb-[120px] md:pt-[200px] lg:items-center lg:pb-0 lg:pt-0">
         <div className="max-w-2xl space-y-6">
           {/* Eyebrow */}
           <motion.div
@@ -64,7 +64,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5, ease }}
-            className="font-heading text-7xl font-extrabold leading-[1.0] tracking-[-0.03em] text-white md:text-8xl"
+            className="font-heading text-5xl font-extrabold leading-[1.0] tracking-[-0.03em] text-white md:text-8xl"
           >
             Every Flight
           </motion.h1>
@@ -74,7 +74,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.5, ease }}
-            className="font-heading text-7xl font-extrabold leading-[1.0] tracking-[-0.03em] md:text-8xl"
+            className="font-heading text-5xl font-extrabold leading-[1.0] tracking-[-0.03em] md:text-8xl"
           >
             <span className="brand-gradient-text">Starts Here.</span>
           </motion.p>
@@ -84,7 +84,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55, duration: 0.5, ease }}
-            className="max-w-lg text-[18px] leading-[1.7] text-white/65"
+            className="max-w-lg text-base leading-[1.7] text-white/65 md:text-[18px]"
             style={{ fontFamily: "var(--font-inter)" }}
           >
             SkySuite is the operating platform for flight schools, flying clubs,

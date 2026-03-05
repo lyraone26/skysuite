@@ -23,7 +23,7 @@ const features = [
   {
     icon: Plane,
     title: "Fleet Management",
-    desc: "Aircraft profiles, Hobbs and Tach tracking, airworthiness status, and engine monitor logs in one view.",
+    desc: "Aircraft profiles, Hobbs and Tach tracking, AI Health Score (0-100), and engine monitor dashboards in one view.",
   },
   {
     icon: Wrench,
@@ -78,7 +78,7 @@ const fadeUp = {
 
 export default function FeatureGrid() {
   return (
-    <section id="features" className="bg-[#011830] py-[140px]">
+    <section id="features" className="bg-[#011830] py-[60px] md:py-[100px]">
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -23,20 +23,20 @@ export default function Footer() {
   const [email, setEmail] = useState("");
 
   return (
-    <footer className="bg-[#011830] py-[120px]">
+    <footer className="bg-[#011830] py-[60px] md:py-[100px]">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-12 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           {/* Left: Logo + tagline */}
           <div>
             <Image
               src="/brand/Logo-07.png"
-              alt="SkySuite - Every Flight Starts Here"
+              alt="SkySuite - Flight operations, finally intelligent."
               width={180}
               height={54}
               className="h-10 w-auto object-contain"
             />
             <p className="mt-3 text-sm text-slate-400">
-              Every Flight Starts Here.
+              Flight operations, finally intelligent.
             </p>
           </div>
 

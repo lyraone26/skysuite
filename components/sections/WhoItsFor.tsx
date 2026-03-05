@@ -35,7 +35,7 @@ const fadeUp = {
 
 export default function WhoItsFor() {
   return (
-    <section className="bg-[#F5F7F0] py-[120px]">
+    <section className="bg-[#F5F7F0] py-[60px] md:py-[100px]">
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

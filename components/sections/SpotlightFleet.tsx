@@ -65,7 +65,7 @@ const statCards = [
 
 export default function SpotlightFleet() {
   return (
-    <section id="fleet" className="bg-[#011830] py-[160px]">
+    <section id="fleet" className="bg-[#011830] py-[80px] md:py-[120px] lg:py-[160px]">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
         {/* Copy LEFT */}
         <motion.div
@@ -111,7 +111,7 @@ export default function SpotlightFleet() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="order-1 lg:order-2"
+          className="order-1 max-h-[400px] overflow-hidden lg:order-2 lg:max-h-none"
         >
           <div className="rounded-2xl border border-slate-700/40 bg-slate-900 p-6 shadow-2xl">
             {/* Header */}

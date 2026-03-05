@@ -1,0 +1,294 @@
+# Version 4 Feedback
+
+##Improve UX/UI on Mobile without losing integrity or cutting images. 
+
+## 1. What Is SkySuite?
+
+SkySuite is an all-in-one, AI-powered aviation operations platform for flight schools, flying clubs, independent CFIs, FBOs, and rental operations. It replaces fragmented legacy tools (Schedule Master, paper logbooks, spreadsheets) with a single modern hub for scheduling, fleet management, maintenance tracking, training management, billing, and business intelligence.
+
+**Tagline direction:** "Your flight school, on autopilot." / "The operations platform GA deserves." / "Like having a brilliant ops manager who never sleeps."
+
+**Core promise:** Every club operation — from booking a flight to predicting an engine overhaul — is effortless, intelligent, and reliable.
+
+---
+
+## 2. Target Audience
+
+| Segment | Priority | Who They Are |
+|---------|----------|-------------|
+| Flying clubs | Primary launch target | Nonprofit or equity clubs, 20-200 members, 3-20 aircraft. Currently on Schedule Master or paper. |
+| Flight schools | High | Part 61 and Part 141 schools needing CFI management, syllabus tracking, FAA compliance. |
+| Independent CFIs | Medium | Freelance instructors who teach at multiple schools. Need student tracking, endorsement logs, logbooks. |
+| Rental operations | Medium | FBOs or individuals renting out aircraft. Need scheduling, billing, maintenance tracking. |
+| Multi-location chains | Future | Flight school chains operating across multiple airports. |
+
+**Key decision-makers:** Club managers, chief instructors, school owners, operations directors.
+**Key users:** Pilots booking flights, CFIs managing students, mechanics tracking maintenance, dispatchers running the board.
+
+---
+
+## 3. Competitive Positioning
+
+| Competitor | Weakness SkySuite Exploits |
+|-----------|---------------------------|
+| Schedule Master | Legacy UI, no AI, no mobile experience, no maintenance intelligence |
+| Flight Schedule Pro | Scheduling-only — no fleet, no maintenance, no training |
+| Flight Circle | Limited AI, weaker maintenance and compliance features |
+| Spreadsheets / Paper | Zero automation, zero insight, error-prone, not scalable |
+
+**SkySuite's unfair advantage:** Three-layer AI intelligence (Individual → Tenant → Network) that gets smarter with every flight, every member, every club.
+
+---
+
+## 4. Design Direction
+
+### Visual Identity
+- **Dark theme** — the entire application is dark-mode native (deep navy/charcoal backgrounds, not pure black)
+- **Premium and modern** — think Linear, Vercel, Arc Browser. Clean, spacious, confident.
+- **Aviation-inflected, not aviation-cliché** — no propeller clip art, no cartoon planes, no stock photos of Cessnas at sunset. Use subtle aviation geometry (runways, approach plates, instrument arcs) as abstract design elements if needed.
+- **Glass morphism / translucent cards** — the app uses "glass card" components with blur effects. The landing page should share this DNA.
+- **Framer Motion animations** — smooth, purposeful motion. Elements should feel alive without being distracting. Parallax, scroll-triggered reveals, micro-interactions.
+- **Color palette:** Primary blue (#3B82F6 range), accent emerald for success/health states, amber for warnings, red for critical. White and light gray text on dark backgrounds. Gradient accents.
+
+### Typography
+- Clean sans-serif. Inter or Geist. Large, bold headlines. Generous spacing.
+
+### Tone of Voice
+- **Confident, not corporate.** SkySuite knows it's good.
+- **Technical credibility without jargon overload.** Pilots and ops managers are smart — don't dumb it down, but don't drown in acronyms either.
+- **Slightly opinionated.** "Your current tools are holding you back" energy.
+
+---
+
+## 5. Page Structure — Sections
+
+### Hero Section
+**Goal:** Instant clarity on what SkySuite is + emotional hook.
+
+- Bold headline (e.g., "Flight operations, finally intelligent.")
+- Subtitle: 1-2 sentences explaining the product for someone who's never heard of it.
+- Primary CTA: "Get Started" or "Book a Demo"
+- Secondary CTA: "See it in action" (scrolls to product tour or opens video)
+- **Hero visual:** An animated/interactive mockup of the app — ideally the dashboard or scheduling view showing the dark UI, role-based layout, and glass card components. NOT a static screenshot. Consider a 3D perspective tilt with depth, or a live-feeling UI animation.
+
+### Social Proof Bar (optional, if available)
+- Logos of early clubs/partners, or key stats ("X flights managed", "Y aircraft tracked")
+- Can be added post-launch once metrics exist. Placeholder design for now.
+
+---
+
+### Feature Section 1: Smart Scheduling + Roger AI
+**The hook:** "Book a flight with your voice. Literally."
+
+Highlight:
+- **Roger AI Assistant** — natural language booking ("Book me a 172 Saturday morning"), conflict prevention, optimal time suggestions
+- **Voice commands** via Cmd+K command palette with speech-to-text
+- **Role-based schedule views** — pilots see their flights, CFIs see their students, dispatchers see the full board, maintenance sees blocks
+- **Conflict detection** — real-time, zero double-bookings (database-enforced)
+- **Mobile booking wizard** — 4 taps: date, aircraft, time, confirm
+
+**Visual suggestion:** Side-by-side of the Roger command dialog and the schedule grid, or an animation of a voice command turning into a confirmed booking.
+
+---
+
+### Feature Section 2: Fleet Management + Live Tracking
+**The hook:** "Know every aircraft like you built it."
+
+Highlight:
+- **Aircraft profiles** with full specs, documents (AROW), engine monitoring, analytics
+- **Live fleet map** — ADS-B position tracking on a Leaflet map, see every aircraft in the air
+- **Engine monitor dashboards** — CHT, EGT, oil pressure/temp trends from G1000 imports
+- **Aircraft analytics** — utilization trends, flight mix, revenue per tail, top pilots, day-of-week patterns
+- **FAA registry integration** — one-click prefill from N-number lookup
+- **Document management** — upload, categorize, track expiration on aircraft documents
+
+**Visual suggestion:** The fleet map with aircraft pins + an aircraft profile card with engine gauges and analytics charts.
+
+---
+
+### Feature Section 3: Maintenance Intelligence
+**The hook:** "Predict problems before they ground your fleet."
+
+Highlight:
+- **Aircraft Health Score** — AI-computed single 0-100 number per aircraft combining engine trends, open squawks, time-to-inspection, maintenance history
+- **Squawk management** — report, categorize, route to mechanic, convert to work orders
+- **AD Register** — track Airworthiness Directives, compliance status, auto-link to maintenance requirements
+- **Inspection scheduling** — forecast view with horizon groups, conflict detection across fleet, "best days" optimization
+- **Work order lifecycle** — create from squawk or AD, track through completion
+- **Maintenance forecast** — project upcoming maintenance events, plan budgets
+- **Component TBO tracking** — track time-before-overhaul on engines, props, accessories
+
+**Visual suggestion:** The status board showing aircraft cards with health scores (using the circular gauge component), or the inspection timeline/forecast view.
+
+---
+
+### Feature Section 4: CFI Portal + Training Management
+**The hook:** "FAA audit-ready. Always."
+
+Highlight:
+- **Part 61 and Part 141 compliance** — separate regulatory engines with automatic rule enforcement
+- **Digital endorsements** — structured endorsement records with digital signature (no paper)
+- **Stage checks** — full lifecycle: schedule, evaluate, sign, CI review. Separate evaluator enforcement.
+- **Training syllabi (TCO)** — build curricula, version them, track student progression lesson by lesson
+- **Student management** — roster, notes, lesson debriefs, progress tracking
+- **Chief Instructor dashboard** — audit readiness, instructor deviations, override logs, compliance reports
+- **Dispatch compliance checks** — hard blocks: no valid endorsement = no flight. Non-overridable.
+- **Immutable records** — SHA-256 hashing on all compliance-critical records. Records can't be silently edited.
+- **Standalone CFI mode** — independent instructors can use SkySuite without belonging to an org, teach across multiple schools
+
+**Visual suggestion:** The endorsement signing dialog, or the chief instructor dashboard with compliance widgets. Emphasize the "audit trail" visual — locked records, signature confirmations, compliance badges.
+
+---
+
+### Feature Section 5: AI Flight Planner
+**The hook:** "Tell us where you want to go. We'll handle the rest."
+
+Highlight:
+- **Natural language input** — "I want to fly to Oshkosh" → full plan
+- **Aircraft recommendation** — suggests best aircraft based on checkout status, range, W&B, weather, cost
+- **Route planning** — fuel stops, waypoints, weather assessment along route
+- **Cost estimation** — true cost including fuel, hourly rate, prorated maintenance reserves
+- **Airport semantic search** — find airports by name, code, or description using vector search
+- **Saved plans** — save and revisit flight plans
+
+**Visual suggestion:** The flight planner page with the Leaflet route map, aircraft recommendation cards, and cost breakdown panel.
+
+---
+
+### Feature Section 6: Role-Based Dashboards
+**The hook:** "Everyone sees exactly what they need."
+
+Highlight:
+- **5 distinct dashboard views:** Pilot, CFI, Admin, Maintenance, Dispatch
+- **Pilot dashboard:** upcoming flights, currency gauges, weather, recent reservations, fleet status
+- **CFI dashboard:** today's lessons, student progress, pending endorsements, teaching stats
+- **Admin dashboard:** KPIs, revenue overview, fleet health, member management, alerts
+- **Maintenance dashboard:** open squawks, work order queue, inspection schedule, hours tracker
+- **Dispatch dashboard:** flight board, aircraft availability matrix, schedule conflicts, today's schedule
+- **Multi-role support** — a user who is both a Pilot and CFI seamlessly switches between views
+
+**Visual suggestion:** An animated carousel or tab switcher showing different dashboard views for different roles. Show how the same app transforms based on who's logged in.
+
+---
+
+### Feature Section 7: Mobile-First + PWA
+**The hook:** "Your flight school in your pocket."
+
+Highlight:
+- **Progressive Web App** — install on home screen, works offline
+- **Push notifications** — currency expiration alerts, booking confirmations, maintenance updates
+- **Mobile booking wizard** — optimized 4-step flow for phones
+- **Responsive everything** — every screen works on mobile
+
+**Visual suggestion:** Phone mockup showing the mobile booking flow or a push notification on a lock screen.
+
+---
+
+### Feature Section 8: Admin & Operations
+**The hook:** "Run your operation, don't let it run you."
+
+Highlight:
+- **Custom RBAC** — define roles, assign granular permissions (domain.action pattern), create role groups
+- **Member management** — invite system, applicant queue, role assignment, entitlements
+- **Stripe Connect billing** — real payment processing, dues, flight charges
+- **Organization branding** — custom logo, colors, white-label feel
+- **Data import** — migrate from ScheduleMaster (members, aircraft, schedules, maintenance history)
+- **Resource management** — schedule simulators, classrooms, briefing rooms alongside aircraft
+- **Multi-tenant architecture** — one deployment serves many orgs with zero data leakage
+
+**Visual suggestion:** Admin settings panel with role configuration, or the ScheduleMaster import wizard showing a successful migration.
+
+---
+
+### Feature Section 9: Business Intelligence (Coming Soon)
+**The hook:** "AI that optimizes your business while you sleep."
+
+Highlight (mark as "Coming Soon" or "Roadmap"):
+- **Fleet utilization AI** — suggestions for improving usage of underutilized aircraft
+- **Dynamic pricing** — anti-surge discounts for empty slots
+- **Maintenance clustering** — group events across fleet to reduce shop visits
+- **Weekly AI digest** — auto-generated operational summary, zero effort
+- **Natural language analytics** — "What's our busiest day?" → instant chart
+- **Network intelligence** — anonymized cross-club benchmarking (Waze model)
+
+**Visual suggestion:** A futuristic/abstract section with lighter visual treatment to signal "coming soon." Maybe a preview of the analytics dashboard with blurred/teased data.
+
+---
+
+### Data Import / Migration Section
+**The hook:** "Switch in a weekend, not a quarter."
+
+- Highlight the ScheduleMaster import wizard specifically (most common competitor)
+- Mention G1000 engine log import, flight data import, squawk import
+- Emphasize: "We don't just support your data — we import it and make it smarter."
+
+---
+
+### Pricing Section
+**Direction (final pricing TBD):**
+- Per-aircraft subscription model
+- Freemium tier available (with Stripe processing fee)
+- Tiers based on org size and feature set
+- Standalone CFI subscription option
+- Design should accommodate 2-4 pricing cards
+
+---
+
+### Final CTA Section
+- Repeat primary CTA with urgency or emotional hook
+- "Your club deserves better than Schedule Master."
+- Email capture or demo booking form
+
+---
+
+### Footer
+- Standard links: Product, Features, Pricing, About, Contact, Legal
+- Social links (if applicable)
+- "Built for pilots, by pilots" or similar credibility line
+
+---
+
+## 6. Key Assets Needed
+
+| Asset | Notes |
+|-------|-------|
+| App screenshots / mockups | Real dark-UI screenshots from the app (dashboard, schedule, fleet map, maintenance, CFI portal, Roger dialog, flight planner) |
+| Phone mockups | Mobile views in device frames |
+| Logo / wordmark | SkySuite brand assets |
+| Icons | Feature icons for each section (could use Lucide icons to match the app) |
+| Animation specs | Framer Motion scroll animations, hero interaction, role switcher |
+| Illustration style | Abstract aviation geometry — NOT clip art. Subtle, premium. |
+
+---
+
+## 7. Technical Notes for Implementation
+
+- The landing page will likely live at the root route or under `app/(marketing)/`
+- Built with the same stack: Next.js, Tailwind v4, Framer Motion, shadcn/ui
+- Should be statically generated (no auth required, pure marketing)
+- Mobile-responsive is non-negotiable
+- Performance: target < 3s LCP, optimize images, lazy-load below-fold sections
+- SEO: proper meta tags, Open Graph, structured data
+
+---
+
+## 8. Inspiration References
+
+- **Linear.app** — dark theme, premium feel, smooth animations, confident copy
+- **Vercel.com** — clean hero, product-led storytelling, developer credibility
+- **Arc.net** — opinionated design, bold typography, "we're different" energy
+- **Raycast.com** — dark UI product showcase, feature depth without overwhelm
+- **Stripe.com** — technical credibility + beautiful design, feature section depth
+
+---
+
+## 9. Summary of Feature Count (for "by the numbers" section)
+
+| Metric | Count |
+|--------|-------|
+| API endpoints | 130+ |
+| Role-based views | 5 dashboard types + 5 schedule views |
+| Aircraft data points tracked | Engine temps, oil, TBO, inspections, squawks, ADs, documents, hours, costs |
+| Regulatory frameworks | Part 61 + Part 141 |
+| Import sources | ScheduleMaster, G1000, FAA registry, flight records, squawks |
+| AI capabilities | Voice commands, NLP booking, health scores, flight planning, currency alerts, component extraction |

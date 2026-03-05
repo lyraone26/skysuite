@@ -14,13 +14,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SkySuite - Every Flight Starts Here",
+  title: "SkySuite - Flight operations, finally intelligent.",
   description:
-    "Aviation scheduling and operations platform for flight schools, flying clubs, and aircraft partnerships.",
+    "Flight operations, finally intelligent. Aviation scheduling and operations platform for flight schools, flying clubs, and aircraft partnerships.",
   openGraph: {
-    title: "SkySuite - Every Flight Starts Here",
+    title: "SkySuite - Flight operations, finally intelligent.",
     description:
-      "Aviation scheduling and operations platform for flight schools, flying clubs, and aircraft partnerships.",
+      "Flight operations, finally intelligent. Aviation scheduling and operations platform for flight schools, flying clubs, and aircraft partnerships.",
   },
 };
 

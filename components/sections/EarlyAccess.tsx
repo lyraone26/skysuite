@@ -21,7 +21,7 @@ export default function EarlyAccess() {
   };
 
   return (
-    <section id="early-access" className="bg-[#011830] py-[120px]">
+    <section id="early-access" className="bg-[#011830] py-[60px] md:py-[100px]">
       <div className="mx-auto max-w-lg px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,11 +41,11 @@ export default function EarlyAccess() {
                 <span className="h-px w-6 bg-[#07BCE7]/40" />
               </div>
               <h2 className="mt-6 mb-3 font-heading text-3xl font-bold text-white">
-                Be first in the pattern
+                Be first in the pattern.
               </h2>
               <p className="mb-6 text-base leading-[1.7] text-white/65">
-                Join the limited beta cohort. We are onboarding a select group of
-                flight schools and clubs before our public launch.
+                Join the limited beta cohort. Early members lock in founder pricing
+                before our public launch.
               </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -67,7 +67,7 @@ export default function EarlyAccess() {
                 </button>
               </form>
               <p className="mt-4 text-xs text-slate-500">
-                Limited beta cohort. No credit card required.
+                Founder pricing guaranteed &middot; 30-day free trial &middot; No credit card
               </p>
             </>
           ) : (

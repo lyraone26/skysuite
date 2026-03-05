@@ -34,7 +34,7 @@ const fadeIn = {
 
 export default function WhySkySuite() {
   return (
-    <section id="why-skysuite" className="bg-[#F5F7F0] py-[120px]">
+    <section id="why-skysuite" className="bg-[#F5F7F0] py-[60px] md:py-[100px]">
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           variants={fadeIn}

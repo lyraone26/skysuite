@@ -55,7 +55,7 @@ const bullets = [
 
 export default function SpotlightScheduling() {
   return (
-    <section id="scheduling" className="bg-[#F5F7F0] py-[160px]">
+    <section id="scheduling" className="bg-[#F5F7F0] py-[80px] md:py-[120px] lg:py-[160px]">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
         {/* UI Panel LEFT */}
         <motion.div
@@ -63,6 +63,7 @@ export default function SpotlightScheduling() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
+          className="max-h-[400px] overflow-hidden lg:max-h-none"
         >
           <div className="rounded-2xl border border-slate-700/40 bg-slate-900 p-6 shadow-2xl">
             {/* Header */}
