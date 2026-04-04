@@ -218,14 +218,14 @@ Highlight (mark as "Coming Soon" or "Roadmap"):
 ### Data Import / Migration Section
 **The hook:** "Switch in a weekend, not a quarter."
 
-- Highlight the ScheduleMaster import wizard specifically (most common competitor)
+- Highlight the ScheduleMaster import wizard specifically (most common competitor); Flight Schedule Pro import wizard in development 
 - Mention G1000 engine log import, flight data import, squawk import
 - Emphasize: "We don't just support your data — we import it and make it smarter."
 
 ---
 
 ### Pricing Section
-**Direction (final pricing TBD):**
+**Direction (final pricing TBD, but propose pricing as a placeholder):**
 - Per-aircraft subscription model
 - Freemium tier available (with Stripe processing fee)
 - Tiers based on org size and feature set
@@ -236,7 +236,7 @@ Highlight (mark as "Coming Soon" or "Roadmap"):
 
 ### Final CTA Section
 - Repeat primary CTA with urgency or emotional hook
-- "Your club deserves better than Schedule Master."
+- "Your club deserves the best."
 - Email capture or demo booking form
 
 ---
@@ -250,22 +250,11 @@ Highlight (mark as "Coming Soon" or "Roadmap"):
 
 ## 6. Key Assets Needed
 
-| Asset | Notes |
-|-------|-------|
-| App screenshots / mockups | Real dark-UI screenshots from the app (dashboard, schedule, fleet map, maintenance, CFI portal, Roger dialog, flight planner) |
-| Phone mockups | Mobile views in device frames |
-| Logo / wordmark | SkySuite brand assets |
-| Icons | Feature icons for each section (could use Lucide icons to match the app) |
-| Animation specs | Framer Motion scroll animations, hero interaction, role switcher |
-| Illustration style | Abstract aviation geometry — NOT clip art. Subtle, premium. |
 
 ---
 
 ## 7. Technical Notes for Implementation
 
-- The landing page will likely live at the root route or under `app/(marketing)/`
-- Built with the same stack: Next.js, Tailwind v4, Framer Motion, shadcn/ui
-- Should be statically generated (no auth required, pure marketing)
 - Mobile-responsive is non-negotiable
 - Performance: target < 3s LCP, optimize images, lazy-load below-fold sections
 - SEO: proper meta tags, Open Graph, structured data
@@ -273,12 +262,7 @@ Highlight (mark as "Coming Soon" or "Roadmap"):
 ---
 
 ## 8. Inspiration References
-
-- **Linear.app** — dark theme, premium feel, smooth animations, confident copy
-- **Vercel.com** — clean hero, product-led storytelling, developer credibility
-- **Arc.net** — opinionated design, bold typography, "we're different" energy
-- **Raycast.com** — dark UI product showcase, feature depth without overwhelm
-- **Stripe.com** — technical credibility + beautiful design, feature section depth
+--provided already: Cirrus & Ferrari 
 
 ---
 
